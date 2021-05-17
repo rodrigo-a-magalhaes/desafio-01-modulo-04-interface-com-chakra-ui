@@ -21,9 +21,26 @@ export const theme = extendTheme({
       body: {
         bg: '#F5F8FA',
         color: '#47585B'
+      },
+      h1: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 500,
+        fontSize: ['20px', '36px'],
+        lineHeight: ['30px', '54px'],
+        color: '#F5F8FA',
+      },
+      h5: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: ['14px', '20px'],
+        lineHeight: ['21px', '30px'],
+        color: '#DADADA'
       }
     }
-  }
+  },
+
 });
 
 

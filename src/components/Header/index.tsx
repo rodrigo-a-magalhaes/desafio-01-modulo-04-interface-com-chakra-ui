@@ -1,14 +1,22 @@
-import { Box, Flex, Image } from '@chakra-ui/react';
-import styles from '../../styles/home.module.css';
+import { Flex, Image, useBreakpointValue } from '@chakra-ui/react';
 
-export function Header(){
-  return(
+export function Header() {
+  const isMobile = useBreakpointValue({
+    base: true,
+    md: false
+  });
+
+  return (
     <Flex
+      as="header"
       justifyContent="center"
       alignItems="center"
-      h='100px'
+      h={isMobile ? '50px' : '100px'}
     >
-      <Image src="/static/Logo.svg" alt="Logo"/>
+      <Image
+        w={isMobile ? '81px' : '185px'}
+        src="/static/Logo.svg"
+        alt="Logo" />
     </Flex>
   );
 }
